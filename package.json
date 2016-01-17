@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Okahyphen/mtd-help#readme",
   "devDependencies": {
-    "mtd": "0.0.2"
+    "mtd": "^0.2.0"
   },
   "dependencies": {
     "chalk": "^1.1.1"
