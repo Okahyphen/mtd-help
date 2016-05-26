@@ -2,9 +2,9 @@
   "name": "mtd-help",
   "version": "0.1.1",
   "description": "A helpful Track.",
-  "main": "mtd-help.js",
+  "main": "lib/mtd-help.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/Okahyphen/mtd-help#readme",
   "devDependencies": {
-    "mtd": "^0.2.0"
+    "mtd": "^1.0.0"
   },
   "dependencies": {
     "chalk": "^1.1.1"
-  }
+  },
+  "files": [
+    "lib/"
+  ]
 }
