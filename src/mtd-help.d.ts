@@ -6,7 +6,7 @@ interface Settings extends Object {
     [index: string]: any;
 
     multi?: boolean;
-    reportErros?: boolean;
+    reportErrors?: boolean;
     reruns?: boolean;
 }
 
@@ -46,10 +46,18 @@ interface MTD {
     tracks: GenericObject;
 
     getAlias: (o: Option) => string;
+
+
+    _default: string;
 }
 
 interface Track {
     block: Block;
     handle: string;
     options: Option[];
+}
+
+interface HelpSettings {
+    name: string;
+    hide: boolean;
 }
