@@ -18,7 +18,7 @@ function prefix (arg: string): string {
 module.exports =
 (function wrap (
     settings: HelpSettings,
-    descriptions: GenericObject
+    descriptions: GenericObject = {}
 ): Block {
     if (!settings) {
         settings = {

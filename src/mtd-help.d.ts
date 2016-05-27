@@ -47,7 +47,6 @@ interface MTD {
 
     getAlias: (o: Option) => string;
 
-
     _default: string;
 }
 
