@@ -16,7 +16,7 @@ function prefix (arg: string): string {
 }
 
 module.exports =
-(function wrap (
+(function factory (
     settings: HelpSettings,
     descriptions: GenericObject = {}
 ): Block {
@@ -57,7 +57,11 @@ module.exports =
             );
 
             console.log(`\n${chalk.blue('[ %s ]')}${defaultTrack} %s`,
-                handle, descriptions[handle] || '');
+                handle,
+                (descriptions.hasOwnProperty(handle)
+                    ? descriptions[handle]
+                    : '')
+            );
 
             track.options.forEach((opt: Option): void => {
                 const name: string = chalk.yellow(prefix(opt.$));
